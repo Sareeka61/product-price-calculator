@@ -1,7 +1,6 @@
 import './App.css'
 import TshirtDetails from './TshirtDetails';
 
-
 const App = () => {
   return(
     <>

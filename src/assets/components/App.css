@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -21,6 +19,8 @@
 
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  
   font-size: 16px;
   line-height: 1.5;
   background-color: #f2f2f2;
@@ -36,6 +36,8 @@ header {
 h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  color: white;
+  background-color: black;
 }
 
 main {

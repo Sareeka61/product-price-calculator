@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 
 
-const Body = ({ tprice }) => {
+const Body = ({ price }) => {
   const [quantity, setQuantity] = useState(1);
-  console.log(tprice);
-  tprice = parseFloat(tprice);
-  
 
   const handleQuantityChange = (e) =>
   {
@@ -17,7 +14,7 @@ const Body = ({ tprice }) => {
         <form>
           <label for="quantity">Quantity:</label>
           <input type="number" id="quantity" name="quantity" min="1" max="10" value={quantity} onChange={handleQuantityChange}></input>
-          <p className="total-price">Total Price: ${(quantity*tprice)}</p>
+          <p className="total-price">Total Price: ${(quantity*price)}</p>
           <button type="submit" >Add to Cart</button>
         </form>
     )

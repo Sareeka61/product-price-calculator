@@ -3,11 +3,11 @@ import Footer from './Footer';
 import Body from './Body';
 
 
-const TshirtDetails = ({picture, name, description, price, tprice}) => {
+const TshirtDetails = ({picture, name, description, price}) => {
     return (
          <div class="tshirt">
         <Header picture={picture} name={name} description={description} price={price}/>
-        <Body tprice={tprice}/>
+        <Body price={price}/>
         <Footer />
         </div>
     )
